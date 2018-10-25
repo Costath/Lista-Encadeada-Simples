@@ -48,7 +48,7 @@ Lista* insereFim(Lista* L, int dado){		//Insere no fim da lista o elemento infor
 		P->prox = novo;
 		novo->anterior = P;
 		
-		return L;		//Retorna o próprio L caso a lista já contenha outros elementos.
+		return L;		//Retorna o prÃ³prio L caso a lista jÃ¡ contenha outros elementos.
 	}
 }
 
@@ -68,7 +68,7 @@ int mostrarInicio(Lista* L){		//Retorna o primeiro elemento da lista.
 	return L->info;
 }
 
-int mostrarFim(Lista* L){		//Retorna o último elemento da lista.
+int mostrarFim(Lista* L){		//Retorna o Ãºltimo elemento da lista.
 	
 	Lista* P = L;
 	while(P->prox != NULL){
@@ -106,7 +106,7 @@ bool buscar(Lista* L, int dado){		//Retorna 'true' se determinado elemento estiv
 Lista* retira(Lista* L, int dado){		//Retira determinado elemento da lista de forma recursiva.
 	
 	if(vazia(L)){
-		printf("Objeto não encontrado na lista.\n")
+		printf("Objeto nÃ£o encontrado na lista.\n");
 		return L;
 	}
 	
@@ -114,7 +114,7 @@ Lista* retira(Lista* L, int dado){		//Retira determinado elemento da lista de fo
 		Lista* P = L;
 		L = L->prox;
 		free(P);
-		printf("Elemento |%d| retirado da lista.\n")
+		printf("Elemento |%d| retirado da lista.\n");
 	}else{
 		L->prox = retira(L->prox, dado);
 	}
@@ -132,7 +132,7 @@ int tamanho(Lista* L){		//Verifica e retorna o tamanho da lista.
 	return size;
 }
 
-void liberar(Lista* L){		//Libera, de forma recursiva, a memória alocada, caso tenha alguma.
+void liberar(Lista* L){		//Libera, de forma recursiva, a memÃ³ria alocada, caso tenha alguma.
 	
 	if(!vazia(L)){
 		liberar(L->prox);
