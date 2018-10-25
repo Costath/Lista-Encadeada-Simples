@@ -1,9 +1,9 @@
 /*
 
-Autor: Thales Costa
-Disciplina: ED1
+Author: Thales Costa
+Discipline: ED1
 Professor: Irineu
-Maio/2017
+May/2017
 
 */
 
